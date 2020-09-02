@@ -108,7 +108,8 @@ else()
     list(APPEND TORCH_PYTHON_COMPILE_OPTIONS
       -fno-strict-aliasing
       -Wno-write-strings
-      -Wno-strict-aliasing)
+      -Wno-strict-aliasing
+      -fvisibility=hidden)
 endif()
 
 if(USE_CUDA)
